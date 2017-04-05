@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XYZPerson.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    XYZPerson *person = [[XYZPerson alloc]init];
+    [person sayHello];
 }
 
 
