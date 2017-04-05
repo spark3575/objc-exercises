@@ -1,5 +1,5 @@
 //
-//  ShoutingPerson.h
+//  XYZShoutingPerson.h
 //  objc-exercises
 //
 //  Created by Shin Park on 4/5/17.
@@ -8,8 +8,6 @@
 
 #import "XYZPerson.h"
 
-@interface ShoutingPerson : XYZPerson
-
-//- (void)saySomething;
+@interface XYZShoutingPerson : XYZPerson
 
 @end

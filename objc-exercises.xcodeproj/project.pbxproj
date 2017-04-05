@@ -14,7 +14,7 @@
 		B0881CA81E95238D008CD393 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0881CA71E95238D008CD393 /* Assets.xcassets */; };
 		B0881CAB1E95238D008CD393 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0881CA91E95238D008CD393 /* LaunchScreen.storyboard */; };
 		B0881CB41E9532E0008CD393 /* XYZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B0881CB31E9532E0008CD393 /* XYZPerson.m */; };
-		B0881CB71E95476F008CD393 /* ShoutingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B0881CB61E95476F008CD393 /* ShoutingPerson.m */; };
+		B0881CB71E95476F008CD393 /* XYZShoutingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B0881CB61E95476F008CD393 /* XYZShoutingPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		B0881CAC1E95238D008CD393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0881CB21E9532E0008CD393 /* XYZPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZPerson.h; sourceTree = "<group>"; };
 		B0881CB31E9532E0008CD393 /* XYZPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZPerson.m; sourceTree = "<group>"; };
-		B0881CB51E95476F008CD393 /* ShoutingPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoutingPerson.h; sourceTree = "<group>"; };
-		B0881CB61E95476F008CD393 /* ShoutingPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoutingPerson.m; sourceTree = "<group>"; };
+		B0881CB51E95476F008CD393 /* XYZShoutingPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZShoutingPerson.h; sourceTree = "<group>"; };
+		B0881CB61E95476F008CD393 /* XYZShoutingPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZShoutingPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +75,8 @@
 				B0881C9B1E95238D008CD393 /* Supporting Files */,
 				B0881CB21E9532E0008CD393 /* XYZPerson.h */,
 				B0881CB31E9532E0008CD393 /* XYZPerson.m */,
-				B0881CB51E95476F008CD393 /* ShoutingPerson.h */,
-				B0881CB61E95476F008CD393 /* ShoutingPerson.m */,
+				B0881CB51E95476F008CD393 /* XYZShoutingPerson.h */,
+				B0881CB61E95476F008CD393 /* XYZShoutingPerson.m */,
 			);
 			path = "objc-exercises";
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0881CB71E95476F008CD393 /* ShoutingPerson.m in Sources */,
+				B0881CB71E95476F008CD393 /* XYZShoutingPerson.m in Sources */,
 				B0881CB41E9532E0008CD393 /* XYZPerson.m in Sources */,
 				B0881CA31E95238D008CD393 /* ViewController.m in Sources */,
 				B0881CA01E95238D008CD393 /* AppDelegate.m in Sources */,
@@ -324,6 +324,7 @@
 				B0881CB11E95238D008CD393 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
