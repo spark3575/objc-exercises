@@ -10,8 +10,20 @@
 
 @implementation XYZPerson
 
--(void)sayHello {
-    NSLog(@"Hello, World!");
+- (void)sayHello {
+    [self saySomething:@"Hello, World!"];
+}
+
+- (void)sayBye {
+    [self saySomething:@"Bye, World!"];
+}
+
+- (void)saySomething:(NSString *)greeting {
+    NSLog(@"%@", greeting);
+}
+
++ (id)person {
+    [[self alloc]init];
 }
 
 @end

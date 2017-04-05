@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "XYZPerson.h"
+#import "ShoutingPerson.h"
 
 @interface ViewController ()
 
@@ -20,7 +21,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     XYZPerson *person = [[XYZPerson alloc]init];
+    ShoutingPerson *shoutingPerson = [ShoutingPerson person];
     [person sayHello];
+    [person sayBye];
+    [shoutingPerson sayHello];
+    [shoutingPerson sayBye];
 }
 
 

@@ -15,7 +15,9 @@
 @property NSDate *dateOfBirth;
 
 - (void)sayHello;
+- (void)sayBye;
+- (void)saySomething:(NSString *)greeting;
 
-+ (void)person;
++ (id)person;
 
 @end
