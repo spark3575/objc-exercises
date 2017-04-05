@@ -20,12 +20,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    XYZPerson *person = [[XYZPerson alloc]init];
+    XYZPerson *person1 = [XYZPerson person];
     ShoutingPerson *shoutingPerson = [ShoutingPerson person];
-    [person sayHello];
-    [person sayBye];
+    [person1 sayHello];
+    [person1 sayBye];
     [shoutingPerson sayHello];
     [shoutingPerson sayBye];
+    
+    //Check to see if new object's values are automatically assigned as nil
+    XYZPerson *person2;
+    if (person2 == nil) {
+        NSLog(@"New person's values are set to nil");
+    } else {
+        NSLog(@"%@", person2);
+    }
 }
 
 

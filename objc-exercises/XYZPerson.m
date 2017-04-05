@@ -23,7 +23,7 @@
 }
 
 + (id)person {
-    [[self alloc]init];
+    return [[self alloc]init];
 }
 
 @end
