@@ -11,19 +11,31 @@
 @implementation XYZPerson
 
 - (void)sayHello {
-    [self saySomething:@"Hello, World!"];
+    [self saySomething:@"Hello!"];
 }
 
 - (void)sayBye {
-    [self saySomething:@"Bye, World!"];
+    [self saySomething:@"Bye!"];
 }
 
 - (void)saySomething:(NSString *)greeting {
-    NSLog(@"%@", greeting);
+    NSLog(@"%@ %@ %@ %@", greeting, _firstName, _middleName, _lastName);
 }
 
-+ (id)person {
-    return [[self alloc]init];
+- (id)initWithFirstName:(NSString *)aFirstName middleName:(NSMutableString *)aMiddleName lastName:(NSString *)aLastName {
+    
+    if (self) {
+        _firstName = aFirstName;
+        _lastName = aLastName;
+        _middleName = aMiddleName;
+    }
+    
+    return self;
+}
+
+- (id)init {
+    self = [super init];
+    return [self initWithFirstName:@"Shin" middleName:@"Yeol" lastName:@"Park"];
 }
 
 @end

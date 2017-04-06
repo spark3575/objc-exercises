@@ -10,7 +10,8 @@
 
 @interface XYZPerson : NSObject
 
-@property NSString *firstName;
+@property (weak) NSString *firstName;
+@property NSMutableString *middleName;
 @property NSString *lastName;
 @property NSDate *dateOfBirth;
 
@@ -18,6 +19,6 @@
 - (void)sayBye;
 - (void)saySomething:(NSString *)greeting;
 
-+ (id)person;
+- (id)initWithFirstName:(NSString *)aFirstName middleName:(NSMutableString *)aMiddleName lastName:(NSString *)aLastName;
 
 @end

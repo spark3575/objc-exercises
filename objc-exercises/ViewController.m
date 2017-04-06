@@ -20,10 +20,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    XYZPerson *person1 = [XYZPerson person];
-    XYZShoutingPerson *shoutingPerson = [XYZShoutingPerson person];
+    XYZPerson *person1 = [[XYZPerson alloc]init];
+    NSLog(@"%@ %@ %@", person1.firstName, person1.middleName, person1.lastName);
+    person1.middleName = [NSMutableString stringWithString:@"Yol"];
     [person1 sayHello];
     [person1 sayBye];
+    
+    XYZShoutingPerson *shoutingPerson = [[XYZShoutingPerson alloc]init];
+    //shoutingPerson.middleName = [NSMutableString stringWithString:@"Yeol"];
     [shoutingPerson sayHello];
     [shoutingPerson sayBye];
     
