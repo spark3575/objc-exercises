@@ -11,14 +11,17 @@
 @interface XYZPerson : NSObject
 
 @property (weak) NSString *firstName;
-@property NSMutableString *middleName;
 @property NSString *lastName;
-@property NSDate *dateOfBirth;
+@property (readonly) NSString *height;
+@property (readonly) NSString *weight;
 
 - (void)sayHello;
 - (void)sayBye;
 - (void)saySomething:(NSString *)greeting;
+- (void)setHeightWeight:(NSString *)heightWeight;
 
-- (id)initWithFirstName:(NSString *)aFirstName middleName:(NSMutableString *)aMiddleName lastName:(NSString *)aLastName;
+- (id)initWithFirstName:(NSString *)aFirstName lastName:(NSString *)aLastName;
+- (id)initWithHeight: (NSString *)aHeight weight:(NSString *)aWeight;
+- (id)initHW;
 
 @end

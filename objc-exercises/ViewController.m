@@ -9,10 +9,21 @@
 #import "ViewController.h"
 #import "XYZPerson.h"
 #import "XYZShoutingPerson.h"
+#import "XYZPerson+XYZPersonNameDisplayAdditions.h"
+#import "NSString+NSStringDrawUppercase.h"
 
 @interface ViewController ()
 
+@property NSString *deformed;
+
 @end
+
+//@interface XYZPerson ()
+//
+//@property (readwrite) NSString *height;
+//@property (readwrite) NSString *weight;
+//
+//@end
 
 @implementation ViewController
 
@@ -21,8 +32,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     XYZPerson *person1 = [[XYZPerson alloc]init];
-    NSLog(@"%@ %@ %@", person1.firstName, person1.middleName, person1.lastName);
-    person1.middleName = [NSMutableString stringWithString:@"Yol"];
+    NSLog(@"%@ %@", person1.firstName, person1.lastName);    
     [person1 sayHello];
     [person1 sayBye];
     
@@ -38,6 +48,30 @@
     } else {
         NSLog(@"%@", person2);
     }
+    
+    XYZPerson *person3 = [[XYZPerson alloc] initWithFirstName:@"John"
+                                                     lastName:@"Doe"];
+    XYZShoutingPerson *shoutingPerson1 =
+    [[XYZShoutingPerson alloc] initWithFirstName:@"Monica"
+                                        lastName:@"Robinson"];
+    
+    NSLog(@"The two people are %@ and %@",
+          [person3 lastNameFirstNameString], [shoutingPerson1 lastNameFirstNameString]);
+    
+    NSLog(@"The UPPERCASE version of %@ is %@, %@",
+          [person3 lastNameFirstNameString], [person3.lastName drawUppercaseString],
+          [person3.firstName drawUppercaseString]);
+    
+    NSLog(@"The UPPERCASE version of %@ is %@, %@",
+          [shoutingPerson1 lastNameFirstNameString], [shoutingPerson1.lastName drawUppercaseString],
+          [shoutingPerson1.firstName drawUppercaseString]);
+    
+    XYZPerson *person4 = [[XYZPerson alloc]initHW];
+    
+    NSLog(@"This person's height is %@ and weight is %@", person4.height, person4.weight);
+    
+    [person4 setHeightWeight:_deformed];
+    
 }
 
 

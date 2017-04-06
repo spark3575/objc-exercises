@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B01A8F6A1E967D5600A511F6 /* XYZPerson+XYZPersonNameDisplayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B01A8F691E967D5600A511F6 /* XYZPerson+XYZPersonNameDisplayAdditions.m */; };
+		B01A8F6D1E96829800A511F6 /* NSString+NSStringDrawUppercase.m in Sources */ = {isa = PBXBuildFile; fileRef = B01A8F6C1E96829800A511F6 /* NSString+NSStringDrawUppercase.m */; };
 		B0881C9D1E95238D008CD393 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0881C9C1E95238D008CD393 /* main.m */; };
 		B0881CA01E95238D008CD393 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0881C9F1E95238D008CD393 /* AppDelegate.m */; };
 		B0881CA31E95238D008CD393 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0881CA21E95238D008CD393 /* ViewController.m */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B01A8F681E967D5600A511F6 /* XYZPerson+XYZPersonNameDisplayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XYZPerson+XYZPersonNameDisplayAdditions.h"; sourceTree = "<group>"; };
+		B01A8F691E967D5600A511F6 /* XYZPerson+XYZPersonNameDisplayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XYZPerson+XYZPersonNameDisplayAdditions.m"; sourceTree = "<group>"; };
+		B01A8F6B1E96829800A511F6 /* NSString+NSStringDrawUppercase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSStringDrawUppercase.h"; sourceTree = "<group>"; };
+		B01A8F6C1E96829800A511F6 /* NSString+NSStringDrawUppercase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSStringDrawUppercase.m"; sourceTree = "<group>"; };
 		B0881C981E95238D008CD393 /* objc-exercises.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objc-exercises.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0881C9C1E95238D008CD393 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0881C9E1E95238D008CD393 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +83,10 @@
 				B0881CB31E9532E0008CD393 /* XYZPerson.m */,
 				B0881CB51E95476F008CD393 /* XYZShoutingPerson.h */,
 				B0881CB61E95476F008CD393 /* XYZShoutingPerson.m */,
+				B01A8F681E967D5600A511F6 /* XYZPerson+XYZPersonNameDisplayAdditions.h */,
+				B01A8F691E967D5600A511F6 /* XYZPerson+XYZPersonNameDisplayAdditions.m */,
+				B01A8F6B1E96829800A511F6 /* NSString+NSStringDrawUppercase.h */,
+				B01A8F6C1E96829800A511F6 /* NSString+NSStringDrawUppercase.m */,
 			);
 			path = "objc-exercises";
 			sourceTree = "<group>";
@@ -162,10 +172,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0881CB71E95476F008CD393 /* XYZShoutingPerson.m in Sources */,
+				B01A8F6D1E96829800A511F6 /* NSString+NSStringDrawUppercase.m in Sources */,
 				B0881CB41E9532E0008CD393 /* XYZPerson.m in Sources */,
 				B0881CA31E95238D008CD393 /* ViewController.m in Sources */,
 				B0881CA01E95238D008CD393 /* AppDelegate.m in Sources */,
 				B0881C9D1E95238D008CD393 /* main.m in Sources */,
+				B01A8F6A1E967D5600A511F6 /* XYZPerson+XYZPersonNameDisplayAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
